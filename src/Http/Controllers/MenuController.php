@@ -249,7 +249,7 @@ class MenuController extends Controller
 
     public function assets(Request $request)
     {
-        $file = base_path('package/laravel-menu-builder/publishable/assets/'.urldecode($request->path));
+        $file = base_path('vendor/codexshaper/laravel-menu-builder/publishable/assets/'.urldecode($request->path));
 
         if (File::exists($file)) {
             
