@@ -276,7 +276,7 @@ const app = new Vue({
 	$(document).on("click",".edit_menu_item", function(e){
 	    e.preventDefault();
 	    var id = $(this).data('id');
-	    var menu_id = $("#menu_id").val();
+	    var menu_id = $(".menu_id").val();
 	    $.ajax({
 	        url: '/admin/menu/editItem',
 	        method: 'GET',
